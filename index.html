@@ -49,5 +49,16 @@
       });
     </script>
   </head>
-  <body style="margin: 0px; width: 100vw; height: 100vh; overflow: hidden;" id="game_frame"></body>
+  <body style="margin: 0px; width: 100vw; height: 100vh; overflow: hidden;" id="game_frame">
+   <script> 
+  document.body.onload =  function(){
+  document.getElementById("button").onclick = function(){
+  fetch("https://api.render.com/deploy/srv-cknvk8ea02is73c64htg?key=AMh3PJVRtz0",{method: "GET"})
+  }
+  }
+  </script>
+    <button id="button">
+      Start Gamespace Server
+    </button>
+  </body>
 </html>
